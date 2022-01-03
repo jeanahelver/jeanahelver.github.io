@@ -10,21 +10,15 @@
         canvas.style.imageRendering = "crisp-edges";
         const ctx = canvas.getContext("2d");
         document.body.appendChild(canvas);
-   let loadcount = 0;
-   function loader(){
-     loadcount ++
-     if(loadcount == 2) window.requestAnimationFrame(_pix.refresh);
-   }
-        const spritesheet = new Image();
-        spritesheet.addEventListener("load", loader, {once:true});
-        spritesheet.src = "spritesheet.png";
-        const font = new Image();
-        font.addEventListener("load", loader, {once:true});
-        font.src = "font.png";
-
+    
+   const spritesheet = new Image();
+   const font = new Image();
     function PIX(){
         const _pix = {};
-
+        let loadcount = 0;
+        
+        
+        
         let minWidth = minHeight = 128;
         let updateSize = () =>{
             if (window.innerWidth*minWidth > window.innerHeight*minHeight) {
@@ -174,12 +168,16 @@
                ctx.drawImage(font, (t%16)*8, Math.floor(t/16)*8, 8,8 ,Math.floor(x)+i*8, Math.floor(y),8,8);
             }
         }
-
-        spritesheet.onload = function() {
-            font.onload = function() {
-                //window.requestAnimationFrame(_pix.refresh);
-            }
+        
+        function loader(){
+            loadcount ++
+            if(loadcount == 2) window.requestAnimationFrame(_pix.refresh);
         }
+        spritesheet.addEventListener("load", loader, {once:true});
+        spritesheet.src = "spritesheet.png";
+        font.addEventListener("load", loader, {once:true});
+        font.src = "font.png";
+        
         return _pix;
     }
     if(typeof(window.PIX) === 'undefined'){
