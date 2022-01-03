@@ -1,0 +1,10 @@
+"site":"https://jeana.xyz",
+"name":"jeana helver",
+"extensions":{
+ "socialmedia":{
+   "neos":{
+     "name":"jeana",
+     "userID":"U-jeana"
+   }
+ }
+}
