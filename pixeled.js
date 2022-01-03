@@ -13,6 +13,7 @@
    let loadcount = 0;
    function loader(){
      loadcount ++
+     if(loadcount == 2) window.requestAnimationFrame(_pix.refresh);
    }
         const spritesheet = new Image();
         spritesheet.addEventListener("load", loader, {once:true});
@@ -176,7 +177,7 @@
 
         spritesheet.onload = function() {
             font.onload = function() {
-                window.requestAnimationFrame(_pix.refresh);
+                //window.requestAnimationFrame(_pix.refresh);
             }
         }
         return _pix;
