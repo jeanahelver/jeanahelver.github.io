@@ -2,11 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jeana</title>
-    <style>*{margin:0; overflow: hidden;}</style>
+    <style>
+        @font-face {
+            font-family: LCD;
+            src: url(LCD.otf);
+        }
+        *{
+            font-size: 40pt;
+            font-weight: 100;
+        }
+        a { text-decoration: none; }
+        body{
+            background-color: #1f1b1e;
+            height: 100%;
+        }
+        #LCD{
+            font-family: LCD;
+            background-color: #9bbc0f;
+            width: 600px;
+            margin: auto;
+            padding: 50px;
+            border: 3px solid #0f380f;
+            border-radius:10px;
+           
+        }
+        
+    </style>
+    <!--
+        #9bbc0f
+        #8bac0f
+        #306230
+        #0f380f
+    -->
 </head>
-<body bgcolor="#000">
-    <script src="pixeled.js"></script>
-    <script src="game.js" defer></script>
+<body>
+    <div id="LCD">
+    <h1>JEANA HELVER</h1>
+    <p>I DRAW AND STUFF</p><br>
+    <h2>FRIEND LINKS</h2>
+    <a href="https://psychpsyo.tk">PSYCHPSYO</a><br>
+    <a href="https://hidi.tk">HIDI</a>
+    </div>
 </body>
 </html>
