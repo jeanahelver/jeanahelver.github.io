@@ -1,14 +1,23 @@
-{"site":"https://jeana.xyz",
+{"site":"jeana.xyz",
 "name":"jeana helver",
 "birthday":"1992-07-10",
 "pronouns":"they/she",
  "image":"https://jeana.xyz/pfp.png",
-"people":["psychpsyo.tk", "hidi.tk","rep-tiled.tk","punapple.tk"],
+"people":["psychpsyo.tk", "hidi.tk","rep-tiled.tk","punapple.tk","0007i.art"],
  "extensions":{
- "socialmedia":{
+ "socialMedia":{
    "neos":{
      "name":"jeana",
      "userID":"U-jeana"
-   }
+   },
+  "github":{
+   "name":"jeanahelver",
+   "link":"https://github.com/jeanahelver"
+  }
+  "twitter":{
+  "name":"jeana helver",
+  "link":"https://twitter.com/jeanaHelver",
+  "handle":"jeanaHelver"
+ }
  }
 }}
