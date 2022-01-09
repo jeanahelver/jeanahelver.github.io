@@ -28,7 +28,9 @@
             border-radius:10px;
            
         }
-        
+        ul{
+            list-style-type:none;
+        }
     </style>
     <!--
         #9bbc0f
@@ -42,8 +44,26 @@
     <h1>JEANA HELVER</h1>
     <p>I DRAW AND STUFF</p><br>
     <h2>FRIEND LINKS</h2>
-    <a href="https://psychpsyo.tk">PSYCHPSYO</a><br>
-    <a href="https://hidi.tk">HIDI</a>
+    
+    <ul id="ul">
+        <li><a href="https://hidi.tk">HIDI</a></li>
+    </ul>
     </div>
+    <script>
+        const ul = document.getElementById('ul')
+        fetch ("profile.json").then(x => x.json()).then(y => {
+            y.people.forEach(person=>{
+                fetch("https://"+person+"/profile.json").then(x=>x.json()).then(z=>{
+                    const li = document.createElement('li')
+                    const a = document.createElement('a')
+                    a.appendChild(document.createTextNode(z.name.toUpperCase()))
+                    a.title = z.name
+                    a.href = "https://"+person
+                    li.appendChild(a)
+                    ul.appendChild(li)
+                })
+            })
+        })
+    </script>
 </body>
 </html>
