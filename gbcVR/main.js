@@ -37,8 +37,8 @@ for (let key in links) {
 
 
 
-			import { BoxLineGeometry } from './lib/BoxLineGeometry.js';
-			import { VRButton } from './lib/VRButton.js';
+			import { BoxLineGeometry } from './three/BoxLineGeometry.js';
+			import { VRButton } from './three/VRButton.js';
 			let camera, scene, renderer;
 			let controller1, controller2;
 
