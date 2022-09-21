@@ -44,27 +44,6 @@
     <h1>JEANA HELVER</h1>
     <p>I DRAW AND STUFF</p><br>
     <a href="https://jeana.xyz/gbcVR">GBC VR</a><br>   
-    <h2>FRIEND LINKS</h2>
-    
-    <ul id="ul">
-        <li><a href="https://hidi.tk">HIDI</a></li>
-    </ul>
-    </div>
-    <script>
-        const ul = document.getElementById('ul')
-        fetch ("profile.json").then(x => x.json()).then(y => {
-            y.people.forEach(person=>{
-                fetch("https://"+person+"/profile.json").then(x=>x.json()).then(z=>{
-                    const li = document.createElement('li')
-                    const a = document.createElement('a')
-                    a.appendChild(document.createTextNode(z.name.toUpperCase()))
-                    a.title = z.name
-                    a.href = "https://"+person
-                    li.appendChild(a)
-                    ul.appendChild(li)
-                })
-            })
-        })
-    </script>
+    <a href="https://jeana.xyz/xenos">XENOS ABIOSIS</a><br>
 </body>
 </html>
