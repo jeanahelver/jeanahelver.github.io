@@ -1,12 +1,13 @@
 import * as THREE from './three/three.module.js';
 
 ///imports
-let gamelink = "https://raw.githubusercontent.com/AntonioND/back-to-color/master/demo.gbc"
+let gamelink = ""
 function a(){
   
   let newlink = document.createElement("INPUT");
   newlink.type = "url";
   newlink.placeholder = "gb or gbc rom url"
+  newlink.value = "https://raw.githubusercontent.com/AntonioND/back-to-color/master/demo.gbc"
   let button = document.createElement('button')
   button.addEventListener('click', () => {
     gamelink = newlink.value
