@@ -1,7 +1,7 @@
 import * as THREE from './three/three.module.js';
 
 ///imports
-let gamelink = ""
+let gamelink = "https://raw.githubusercontent.com/AntonioND/back-to-color/master/demo.gbc"
 function a(){
   
   let newlink = document.createElement("INPUT");
