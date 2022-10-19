@@ -7,7 +7,7 @@ function a(){
   let newlink = document.createElement("INPUT");
   newlink.type = "url";
   newlink.placeholder = "gb or gbc rom url"
-  newlink.value = "https://raw.githubusercontent.com/AntonioND/back-to-color/master/demo.gbc"
+  newlink.value = "https://cdn.glitch.global/cd8a76ea-3e25-4742-99ee-2bc19d59143f/crystal-clear-2.5.1.gbc"
   let button = document.createElement('button')
   button.addEventListener('click', () => {
     gamelink = newlink.value
